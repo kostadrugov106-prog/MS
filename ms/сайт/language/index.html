@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Язык — MS · Mazing Studio</title>
+<meta name="description" content="Синтаксис MS: переменные, условия, циклы, функции и примеры программ на русском языке.">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<meta name="theme-color" content="#2A2C2B">
+<link rel="canonical" href="https://mazing-studio.site/language">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="MS">
+<meta property="og:title" content="Язык — MS &#183; Mazing Studio">
+<meta property="og:description" content="Синтаксис MS: переменные, условия, циклы, функции и примеры программ на русском языке.">
+<meta property="og:url" content="https://mazing-studio.site/language">
+<meta property="og:image" content="https://mazing-studio.site/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="MS — русский язык программирования">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Язык — MS &#183; Mazing Studio">
+<meta name="twitter:description" content="Синтаксис MS: переменные, условия, циклы, функции и примеры программ на русском языке.">
+<meta name="twitter:image" content="https://mazing-studio.site/assets/og.png">
+<link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+<a class="skip" href="#main">Перейти к содержимому</a>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="/" aria-label="MS — на главную">
+      <img src="/assets/mark.svg" alt="" width="36" height="36">
+      <span class="brand-name">MS</span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Меню</button>
+    <nav class="nav" id="site-nav" aria-label="Основная навигация">
+      <a href="/">Главная</a>
+      <a href="/language" aria-current="page">Язык</a>
+      <a href="/install">Установка</a>
+      <a href="/docs">Справочник</a>
+      <a href="/faq">Вопросы</a>
+      <a href="/versions">Версии</a>
+      <a href="/extensions">Расширения</a>
+      <a class="nav-download" href="/download/MS-1.1-Setup.exe">Скачать</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <div class="wrap">
+    <nav class="crumbs" aria-label="Хлебные крошки">
+      <a href="/">Главная</a><span>/</span><span>Язык</span>
+    </nav>
+
+    <section class="hero">
+      <span class="eyebrow">Язык</span>
+      <h1 class="display">Понятный русский<br><em>синтаксис</em></h1>
+      <p class="lead">
+        Команды простыми словами, отступы вместо скобок, комментарии через <code>#</code>.
+        Всё, что нужно для первых программ, — переменные, условия, циклы, функции,
+        списки, строки и файлы.
+      </p>
+      <div class="actions">
+        <a class="btn btn-primary" href="/download/MS-1.1-Setup.exe">Скачать установщик</a>
+        <a class="btn btn-ghost" href="/docs">Справочник функций</a>
+      </div>
+    </section>
+  </div>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="page-grid">
+        <div class="page-main">
+
+          <div class="section-head" id="base">
+            <span class="eyebrow">Основа</span>
+            <h2>Четыре кирпича языка</h2>
+            <p>Если вы уже видели Python, всё покажется знакомым. Только слова — русские.</p>
+          </div>
+          <div class="grid">
+            <div class="card">
+              <h3>Переменные и вывод</h3>
+              <pre><code>пусть возраст = 25
+возраст = 26
+печатать("Возраст:", возраст)</code></pre>
+            </div>
+            <div class="card">
+              <h3>Условия</h3>
+              <pre><code>если возраст &gt;= 18:
+    печатать("взрослый")
+иначе если возраст &gt;= 14:
+    печатать("подросток")
+иначе:
+    печатать("ребёнок")</code></pre>
+            </div>
+            <div class="card">
+              <h3>Циклы</h3>
+              <pre><code>пока счёт &lt; 3:
+    печатать(счёт)
+    счёт += 1
+
+для слово в ["кот", "пёс"]:
+    печатать(слово)
+
+для н от 1 до 3:
+    печатать(н)</code></pre>
+            </div>
+            <div class="card">
+              <h3>Функции</h3>
+              <pre><code>делать удвой(число):
+    вернуть число * 2
+
+печатать(удвой(21))</code></pre>
+            </div>
+          </div>
+          <p class="note mt-24">
+            Отступы обязательны: тело блока сдвигается вправо. Комментарии начинаются с <code>#</code>.
+            Точка с запятой не нужна. Скобки у <code>печатать</code> можно не писать, а вместо
+            <code>х = х + 1</code> — писать <code>х += 1</code>. В цикле
+            <code>для н от 1 до 10</code> конец включается, шаг задаётся словом <code>шаг</code>.
+          </p>
+
+          <div class="section-head mt-32" id="examples">
+            <span class="eyebrow">Примеры</span>
+            <h2>С чего начать</h2>
+            <p>Сохраните текст в файл <code>.ms</code> и запустите его двойным щелчком.</p>
+          </div>
+
+          <div class="stack">
+            <div class="codeblock">
+              <div class="codehead"><span>привет.ms</span><button class="copy" data-copy='печатать("Привет, мир!")
+пусть имя = спросить("Как тебя зовут? ")
+печатать("Здравствуй,", имя, "!")'>Копировать</button></div>
+              <pre><code>печатать("Привет, мир!")
+пусть имя = спросить("Как тебя зовут? ")
+печатать("Здравствуй,", имя, "!")</code></pre>
+            </div>
+
+            <div class="codeblock">
+              <div class="codehead"><span>калькулятор.ms</span><button class="copy" data-copy='пусть а = число(спросить("Первое число: "))
+пусть б = число(спросить("Второе число: "))
+печатать("Сумма:", а + б)
+печатать("Разность:", а - б)
+печатать("Произведение:", а * б)
+если б != 0:
+    печатать("Частное:", а / б)
+иначе:
+    печатать("На ноль делить нельзя")'>Копировать</button></div>
+              <pre><code>пусть а = число(спросить("Первое число: "))
+пусть б = число(спросить("Второе число: "))
+печатать("Сумма:", а + б)
+печатать("Разность:", а - б)
+печатать("Произведение:", а * б)
+если б != 0:
+    печатать("Частное:", а / б)
+иначе:
+    печатать("На ноль делить нельзя")</code></pre>
+            </div>
+
+            <div class="codeblock">
+              <div class="codehead"><span>факториал.ms</span><button class="copy" data-copy='делать факториал(н):
+    если н &lt;= 1:
+        вернуть 1
+    вернуть н * факториал(н - 1)
+
+печатать("5! =", факториал(5))'>Копировать</button></div>
+              <pre><code>делать факториал(н):
+    если н &lt;= 1:
+        вернуть 1
+    вернуть н * факториал(н - 1)
+
+печатать("5! =", факториал(5))</code></pre>
+            </div>
+          </div>
+
+          <div class="section-head mt-32" id="python">
+            <span class="eyebrow">Сравнение</span>
+            <h2>MS и Python</h2>
+            <p>Честно: где MS удобнее, а где Python сильнее.</p>
+          </div>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr><th>Что</th><th>MS 1.1</th><th>Python</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>Команды на русском</td><td><span class="tag tag-ok">да, полностью</span></td><td>английские</td></tr>
+                <tr><td>Размер</td><td><span class="tag tag-ok">114 КБ</span></td><td>десятки мегабайт</td></tr>
+                <tr><td>Запуск программы</td><td><span class="tag tag-ok">≈ 9 мс</span></td><td>десятки–сотни мс</td></tr>
+                <tr><td>Установка</td><td><span class="tag tag-ok">один файл, без прав админа</span></td><td>установщик</td></tr>
+                <tr><td>Windows 7 / 8 / 8.1</td><td><span class="tag tag-ok">работает</span></td><td>устаревшие версии не поддерживаются</td></tr>
+                <tr><td>Русские функции</td><td><span class="tag tag-ok">прописью, склонение, дата</span></td><td>нужны библиотеки</td></tr>
+                <tr><td>Ошибки</td><td><span class="tag tag-ok">номер строки и подсказка по-русски</span></td><td>traceback на английском</td></tr>
+                <tr><td>Библиотеки и экосистема</td><td>пока небольшая</td><td><span class="tag">огромная</span></td></tr>
+                <tr><td>Машинное обучение, веб, наука</td><td>нет</td><td><span class="tag">да</span></td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="note mt-24">
+            MS — это не «замена Python на всё». Это простой русский язык для обучения,
+            небольших программ и тех случаев, когда нужен лёгкий движок без установки
+            многого другого.
+          </p>
+
+        </div>
+
+        <aside class="toc" aria-label="На этой странице">
+          <b>На этой странице</b>
+          <a href="#base">Основа языка</a>
+          <a href="#examples">Примеры</a>
+          <a href="#python">MS и Python</a>
+          <a href="/docs">Справочник функций</a>
+          <a href="/install">Установка</a>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="band">
+        <div>
+          <h2>Попробуйте на практике</h2>
+          <p>Поставьте MS и запустите первую программу. Установка занимает пару секунд.</p>
+        </div>
+        <div class="actions">
+          <a class="btn btn-primary" href="/download/MS-1.1-Setup.exe">Скачать установщик</a>
+          <a class="btn btn-ghost" href="/install">Инструкция</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="/" aria-label="MS — на главную">
+          <img src="/assets/mark.svg" alt="" width="36" height="36">
+          <span class="brand-name">MS</span>
+        </a>
+        <p>Русский язык программирования для первых программ, обучения и небольших задач. Лёгкий движок, понятный синтаксис, Windows 7–11.</p>
+      </div>
+      <div class="footer-col">
+        <b>Разделы</b>
+        <a href="/language">Язык</a>
+        <a href="/install">Установка</a>
+        <a href="/docs">Справочник</a>
+        <a href="/faq">Вопросы</a>
+        <a href="/versions">Версии</a>
+        <a href="/extensions">Расширения</a>
+      </div>
+      <div class="footer-col">
+        <b>Проект</b>
+        <a href="/brand">Фирменный стиль</a>
+        <a href="https://mazing-studio.site">mazing-studio.site</a>
+        <a href="/download/MS-1.1-Setup.exe">Скачать MS 1.1</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 MS · Mazing Studio · автор GG</span>
+      <span>Версия 1.1</span>
+    </div>
+  </div>
+</footer>
+
+<script src="/assets/site.js"></script>
+</body>
+</html>

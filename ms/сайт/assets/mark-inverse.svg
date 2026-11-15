@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-labelledby="msMarkInvTitle msMarkInvDesc">
+  <title id="msMarkInvTitle">MS</title>
+  <desc id="msMarkInvDesc">Знак MS для тёмного фона: светлый круг с символом командной строки</desc>
+  <circle cx="32" cy="32" r="32" fill="#F1F2F2"/>
+  <path d="M20.5 18.5 L31 27.5 L20.5 36.5" fill="none" stroke="#2A2C2B" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M36 36.5 H46.5" fill="none" stroke="#2A2C2B" stroke-width="5.5" stroke-linecap="round"/>
+</svg>

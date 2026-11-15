@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Справочник — MS · Mazing Studio</title>
+<meta name="description" content="Все встроенные функции MS: строки, числа, списки, файлы. С примерами и описанием.">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<meta name="theme-color" content="#2A2C2B">
+<link rel="canonical" href="https://mazing-studio.site/docs">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="MS">
+<meta property="og:title" content="Справочник — MS &#183; Mazing Studio">
+<meta property="og:description" content="Все встроенные функции MS: строки, числа, списки, файлы. С примерами и описанием.">
+<meta property="og:url" content="https://mazing-studio.site/docs">
+<meta property="og:image" content="https://mazing-studio.site/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="MS — русский язык программирования">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Справочник — MS &#183; Mazing Studio">
+<meta name="twitter:description" content="Все встроенные функции MS: строки, числа, списки, файлы. С примерами и описанием.">
+<meta name="twitter:image" content="https://mazing-studio.site/assets/og.png">
+<link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+<a class="skip" href="#main">Перейти к содержимому</a>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="/" aria-label="MS — на главную">
+      <img src="/assets/mark.svg" alt="" width="36" height="36">
+      <span class="brand-name">MS</span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Меню</button>
+    <nav class="nav" id="site-nav" aria-label="Основная навигация">
+      <a href="/">Главная</a>
+      <a href="/language">Язык</a>
+      <a href="/install">Установка</a>
+      <a href="/docs" aria-current="page">Справочник</a>
+      <a href="/faq">Вопросы</a>
+      <a href="/versions">Версии</a>
+      <a href="/extensions">Расширения</a>
+      <a class="nav-download" href="/download/MS-1.1-Setup.exe">Скачать</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <div class="wrap">
+    <nav class="crumbs" aria-label="Хлебные крошки">
+      <a href="/">Главная</a><span>/</span><span>Справочник</span>
+    </nav>
+
+    <section class="hero">
+      <span class="eyebrow">Справочник</span>
+      <h1 class="display">Встроенные<br><em>функции</em></h1>
+      <p class="lead">
+        Всё это уже работает из коробки — без библиотек и подключений.
+        Функции сгруппированы по темам: строки, числа, списки, файлы.
+        Отдельная группа — расширения: свои функции в файле <code>.ms</code>.
+      </p>
+      <div class="actions">
+        <a class="btn btn-primary" href="/download/MS-1.1-Setup.exe">Скачать установщик</a>
+        <a class="btn btn-ghost" href="/language">Синтаксис языка</a>
+      </div>
+    </section>
+  </div>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="page-grid">
+        <div class="page-main">
+
+          <h3 class="group-title" id="strings">Строки</h3>
+          <div class="table-wrap">
+            <table>
+              <thead><tr><th>Функция</th><th>Что делает</th><th>Пример</th></tr></thead>
+              <tbody>
+                <tr><td><code>длина(х)</code></td><td>длина строки или списка</td><td><code>длина("Привет")</code> → 6</td></tr>
+                <tr><td><code>срез(х, от, до)</code></td><td>кусок строки или списка</td><td><code>срез("Привет", 1, 4)</code> → рив</td></tr>
+                <tr><td><code>подстрока(т, от, до)</code></td><td>кусок строки</td><td><code>подстрока("Привет", -3, 6)</code> → вет</td></tr>
+                <tr><td><code>индекс(х, что)</code></td><td>номер элемента или -1</td><td><code>индекс([10, 20], 20)</code> → 1</td></tr>
+                <tr><td><code>начинается_с(т, кусок)</code></td><td>проверка начала</td><td><code>начинается_с("Привет", "При")</code> → правда</td></tr>
+                <tr><td><code>заканчивается_на(т, кусок)</code></td><td>проверка конца</td><td><code>заканчивается_на("Привет", "вет")</code> → правда</td></tr>
+                <tr><td><code>символ(код)</code> / <code>код(т)</code></td><td>буква по коду и обратно</td><td><code>символ(1046)</code> → Ж</td></tr>
+                <tr><td><code>верхний(т)</code></td><td>заглавные буквы</td><td><code>верхний("привет")</code> → ПРИВЕТ</td></tr>
+                <tr><td><code>нижний(т)</code></td><td>строчные буквы</td><td><code>нижний("ПРИВЕТ")</code> → привет</td></tr>
+                <tr><td><code>обрезать(т)</code></td><td>убрать пробелы по краям</td><td><code>обрезать("  привет  ")</code></td></tr>
+                <tr><td><code>заменить(т, что, на)</code></td><td>заменить кусочки</td><td><code>заменить("чай", "чай", "кофе")</code></td></tr>
+                <tr><td><code>найти(т, что)</code></td><td>номер символа или -1</td><td><code>найти("привет", "мир")</code> → 4</td></tr>
+                <tr><td><code>разделить(т, разд)</code></td><td>разбить на список</td><td><code>разделить("а,б", ",")</code> → [а, б]</td></tr>
+                <tr><td><code>повторить(т, раз)</code></td><td>повторить текст</td><td><code>повторить("ай", 3)</code> → айайай</td></tr>
+                <tr><td><code>взять(т, номер)</code></td><td>символ по номеру</td><td><code>взять("мир", 1)</code> → и</td></tr>
+                <tr><td><code>перевернуть(т)</code></td><td>развернуть</td><td><code>перевернуть("привет")</code> → тевирп</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h3 class="group-title" id="numbers">Числа</h3>
+          <div class="table-wrap">
+            <table>
+              <thead><tr><th>Функция</th><th>Что делает</th><th>Пример</th></tr></thead>
+              <tbody>
+                <tr><td><code>корень(х)</code></td><td>квадратный корень</td><td><code>корень(16)</code> → 4</td></tr>
+                <tr><td><code>модуль(х)</code></td><td>модуль числа</td><td><code>модуль(-7)</code> → 7</td></tr>
+                <tr><td><code>округлить(х)</code></td><td>округление</td><td><code>округлить(3.6)</code> → 4</td></tr>
+                <tr><td><code>целое(х)</code></td><td>отбросить дробную часть</td><td><code>целое(3.9)</code> → 3</td></tr>
+                <tr><td><code>случайное(от, до)</code></td><td>случайное число</td><td><code>случайное(1, 10)</code></td></tr>
+                <tr><td><code>прописью(х)</code></td><td>число словами</td><td><code>прописью(21)</code> → двадцать один</td></tr>
+                <tr><td><code>склонение(ч, а, б, в)</code></td><td>форма слова</td><td><code>склонение(5, "год", "года", "лет")</code> → лет</td></tr>
+                <tr><td><code>степень(х, у)</code></td><td>х в степени у</td><td><code>степень(2, 8)</code> → 256</td></tr>
+                <tr><td><code>логарифм(х, осн)</code></td><td>логарифм</td><td><code>логарифм(100, 10)</code> → 2</td></tr>
+                <tr><td><code>синус / косинус / тангенс(угол)</code></td><td>тригонометрия (радианы)</td><td><code>синус(0)</code> → 0</td></tr>
+                <tr><td><code>пи()</code></td><td>число π</td><td><code>пи()</code> → 3.14159</td></tr>
+                <tr><td><code>случайное_дробное()</code></td><td>случайное от 0 до 1</td><td><code>случайное_дробное()</code></td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h3 class="group-title" id="lists">Списки</h3>
+          <div class="table-wrap">
+            <table>
+              <thead><tr><th>Функция</th><th>Что делает</th><th>Пример</th></tr></thead>
+              <tbody>
+                <tr><td><code>добавить(сп, х)</code></td><td>дописать в конец</td><td><code>добавить(числа, 40)</code></td></tr>
+                <tr><td><code>сумма(сп)</code></td><td>сумма чисел</td><td><code>сумма([1, 2, 3])</code> → 6</td></tr>
+                <tr><td><code>среднее(сп)</code></td><td>среднее значение</td><td><code>среднее([2, 4])</code> → 3</td></tr>
+                <tr><td><code>минимум(сп)</code> / <code>максимум(сп)</code></td><td>наименьшее / наибольшее</td><td><code>минимум([5, 2, 9])</code> → 2</td></tr>
+                <tr><td><code>сортировать(сп)</code></td><td>упорядочить</td><td><code>сортировать([5, 2, 9])</code> → [2, 5, 9]</td></tr>
+                <tr><td><code>содержит(сп, х)</code></td><td>есть ли внутри</td><td><code>содержит([1, 2], 2)</code> → правда</td></tr>
+                <tr><td><code>соединить(сп, разд)</code></td><td>склеить в текст</td><td><code>соединить([1, 2], " + ")</code></td></tr>
+                <tr><td><code>вставить(сп, номер, х)</code></td><td>вставить элемент</td><td><code>вставить(числа, 1, 15)</code></td></tr>
+                <tr><td><code>удалить(сп, номер)</code></td><td>убрать элемент</td><td><code>удалить(числа, 0)</code></td></tr>
+                <tr><td><code>очистить(сп)</code></td><td>убрать всё</td><td><code>очистить(числа)</code></td></tr>
+                <tr><td><code>срез(сп, от, до)</code></td><td>кусок списка</td><td><code>срез([1, 2, 3], 1, 3)</code> → [2, 3]</td></tr>
+                <tr><td><code>индекс(сп, х)</code></td><td>номер элемента или -1</td><td><code>индекс([1, 2], 2)</code> → 1</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h3 class="group-title" id="files">Файлы и прочее</h3>
+          <div class="table-wrap">
+            <table>
+              <thead><tr><th>Функция</th><th>Что делает</th><th>Пример</th></tr></thead>
+              <tbody>
+                <tr><td><code>прочитать(путь)</code></td><td>прочитать файл</td><td><code>прочитать("данные.txt")</code></td></tr>
+                <tr><td><code>записать(путь, текст)</code></td><td>записать файл</td><td><code>записать("итог.txt", "готово")</code></td></tr>
+                <tr><td><code>существует(путь)</code></td><td>есть ли файл</td><td><code>существует("итог.txt")</code></td></tr>
+                <tr><td><code>спросить(вопрос)</code> / <code>ввод(вопрос)</code></td><td>спросить строку</td><td><code>спросить("Имя? ")</code></td></tr>
+                <tr><td><code>строка(х)</code> / <code>число(х)</code></td><td>превратить в текст / число</td><td><code>число("42")</code> → 42</td></tr>
+                <tr><td><code>время()</code></td><td>секунды с 1970 года</td><td><code>время()</code></td></tr>
+                <tr><td><code>дописать(путь, текст)</code></td><td>дописать в конец файла</td><td><code>дописать("итог.txt", "ещё")</code></td></tr>
+                <tr><td><code>строки_файла(путь)</code></td><td>прочитать построчно</td><td><code>строки_файла("данные.txt")</code></td></tr>
+                <tr><td><code>удалить_файл(путь)</code></td><td>удалить файл</td><td><code>удалить_файл("старое.txt")</code></td></tr>
+                <tr><td><code>размер_файла(путь)</code></td><td>размер в байтах</td><td><code>размер_файла("итог.txt")</code></td></tr>
+                <tr><td><code>файлы(папка)</code></td><td>список файлов в папке</td><td><code>файлы(".")</code></td></tr>
+                <tr><td><code>тип(х)</code></td><td>тип значения</td><td><code>тип(42)</code> → число</td></tr>
+                <tr><td><code>дата()</code> / <code>сейчас()</code></td><td>дата и время</td><td><code>сейчас()</code> → 06.11.2026 22:35:20</td></tr>
+                <tr><td><code>ошибка(текст)</code></td><td>остановить с сообщением</td><td><code>ошибка("всё сломалось")</code></td></tr>
+                <tr><td><code>выйти(код)</code></td><td>закончить программу</td><td><code>выйти(0)</code></td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h3 class="group-title" id="dict">Словари</h3>
+          <div class="table-wrap">
+            <table>
+              <thead><tr><th>Функция</th><th>Что делает</th><th>Пример</th></tr></thead>
+              <tbody>
+                <tr><td><code>словарь()</code></td><td>пустой словарь</td><td><code>пусть д = словарь()</code></td></tr>
+                <tr><td><code>словарь(к, з, …)</code></td><td>словарь с парами ключ-значение</td><td><code>словарь("а", 1, "б", 2)</code></td></tr>
+                <tr><td><code>словарь_получить(сл, ключ)</code></td><td>значение или <code>ничего</code></td><td><code>словарь_получить(д, "а")</code></td></tr>
+                <tr><td><code>словарь_установить(сл, ключ, значение)</code></td><td>добавить или заменить</td><td><code>словарь_установить(д, "в", 3)</code></td></tr>
+                <tr><td><code>словарь_есть(сл, ключ)</code></td><td>есть ли ключ</td><td><code>словарь_есть(д, "а")</code> → правда</td></tr>
+                <tr><td><code>словарь_размер(сл)</code></td><td>сколько ключей</td><td><code>словарь_размер(д)</code> → 2</td></tr>
+                <tr><td><code>словарь_ключи(сл)</code></td><td>список ключей</td><td><code>словарь_ключи(д)</code> → [а, б]</td></tr>
+                <tr><td><code>словарь_удалить(сл, ключ)</code></td><td>удалить ключ</td><td><code>словарь_удалить(д, "а")</code></td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h3 class="group-title" id="extensions">Расширения</h3>
+          <div class="table-wrap">
+            <table>
+              <thead><tr><th>Команда</th><th>Что делает</th><th>Пример</th></tr></thead>
+              <tbody>
+                <tr><td><code>подключить("имя")</code></td><td>подключить файл <code>имя.ms</code> из папки расширений</td><td><code>подключить("веб")</code></td></tr>
+                <tr><td><code>подключить имя</code></td><td>то же без скобок</td><td><code>подключить веб</code></td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <p class="note mt-24">
+            Движок ищет расширения в трёх местах: <code>%APPDATA%\MazingStudio\MS\расширения</code>,
+            папка рядом с <code>ms.exe</code> и папка программы. Отключённые наборы лежат с именем
+            <code>имя.ms.off</code> и не загружаются. Управлять ими удобнее в «Центре MS».
+            <a href="/extensions">Подробнее о расширениях</a>.
+          </p>
+
+          <h3 class="group-title" id="web">Расширение «Веб»</h3>
+          <p>Набор для сборки сайтов: теги, блоки, тема и сохранение страниц. Ставится в «Центре MS» →
+            «Каталог с сайта» → «Скачать и включить», подключается строкой <code>подключить("веб")</code>.</p>
+          <div class="table-wrap">
+            <table>
+              <thead><tr><th>Функции</th><th>Что делают</th></tr></thead>
+              <tbody>
+                <tr><td><code>тег</code>, <code>тег_а</code>, <code>одиночный</code>, <code>атрибуты</code></td><td>любые HTML-теги и атрибуты</td></tr>
+                <tr><td><code>заголовок</code>, <code>абзац</code>, <code>цитата</code>, <code>код_блок</code>, <code>выделить</code>, <code>курсив</code></td><td>текст</td></tr>
+                <tr><td><code>ссылка</code>, <code>картинка</code>, <code>кнопка</code>, <code>разделитель</code></td><td>ссылки и элементы</td></tr>
+                <tr><td><code>список</code>, <code>список_н</code>, <code>таблица</code></td><td>списки и таблицы</td></tr>
+                <tr><td><code>карточка</code>, <code>карточки</code>, <code>секция</code>, <code>две_колонки</code>, <code>меню</code>, <code>шапка</code>, <code>подвал</code></td><td>блоки страницы</td></tr>
+                <tr><td><code>поле</code>, <code>форма</code></td><td>формы</td></tr>
+                <tr><td><code>стили</code>, <code>страница</code>, <code>страница_простая</code>, <code>сохранить</code></td><td>тема и готовый HTML-файл</td></tr>
+                <tr><td><code>сайт</code></td><td>все страницы и <code>style.css</code> одной командой</td></tr>
+                <tr><td><code>шаблон</code>, <code>транслит</code>, <code>слаг</code></td><td>подстановки и адреса страниц</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="note mt-24">Пример: <code>подключить("веб")</code>, затем
+            <code>сохранить("index.html", страница_простая("Главная", шапка("Мой сайт", []) + секция(заголовок(1, "Привет"), "")))</code>.</p>
+
+          <h3 class="group-title" id="center">Центр MS</h3>
+          <p>«Центр MS» — окно управления языком: открывается из меню «Пуск» или файлом <code>ms_center.exe</code>.</p>
+          <div class="table-wrap">
+            <table>
+              <thead><tr><th>Вкладка</th><th>Что делает</th></tr></thead>
+              <tbody>
+                <tr><td>Расширения</td><td>установленные наборы и каталог с сайта: скачать, включить, выключить, удалить</td></tr>
+                <tr><td>Настройки</td><td>кодировка вывода, отступ, тема и строгость</td></tr>
+                <tr><td>Учебник</td><td>шесть коротких примеров языка</td></tr>
+                <tr><td>О программе</td><td>версия, автор и ссылка на сайт</td></tr>
+                <tr><td>Редактор</td><td>открыть, сохранить и запустить программу</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="note mt-24">
+            В редакторе Tab вставляет отступ из настроек, а Enter сохраняет отступ строки и увеличивает его после
+            <code>:</code>. Горячие клавиши: <code>Ctrl+O</code> — открыть, <code>Ctrl+S</code> — сохранить,
+            <code>F5</code> — запустить.
+          </p>
+
+          <h3 class="group-title" id="errors">Ошибки и решения</h3>
+          <div class="table-wrap">
+            <table>
+              <thead><tr><th>Сообщение</th><th>Причина</th><th>Что сделать</th></tr></thead>
+              <tbody>
+                <tr><td>переменная не объявлена</td><td>строгий режим, <code>пусть</code> пропущен</td><td>объявите переменную или включите мягкий режим в настройках</td></tr>
+                <tr><td>ожидался отступ</td><td>после строки с <code>:</code> нет вложенного блока</td><td>добавьте отступ на следующей строке</td></tr>
+                <tr><td>не удалось открыть файл</td><td>неверный путь или файл занят</td><td>проверьте путь и закройте файл в другой программе</td></tr>
+                <tr><td>расширение не найдено</td><td>файла нет в папке расширений</td><td>положите <code>имя.ms</code> в папку и проверьте имя в <code>подключить</code></td></tr>
+                <tr><td>ms не является внутренней командой</td><td>команда не попала в PATH</td><td>перезапустите командную строку или переустановите с галочкой PATH</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <p class="note mt-24">
+            Это все встроенные функции версии 1.1. Команды языка — <a href="/language">в разделе «Язык»</a>,
+            установка — <a href="/install">в разделе «Установка»</a>.
+          </p>
+
+        </div>
+
+        <aside class="toc" aria-label="На этой странице">
+          <b>На этой странице</b>
+          <a href="#strings">Строки</a>
+          <a href="#numbers">Числа</a>
+          <a href="#lists">Списки</a>
+          <a href="#files">Файлы и прочее</a>
+          <a href="#dict">Словари</a>
+          <a href="#extensions">Расширения</a>
+          <a href="#web">Расширение «Веб»</a>
+          <a href="#center">Центр MS</a>
+          <a href="#errors">Ошибки и решения</a>
+          <a href="/language">Синтаксис языка</a>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="band">
+        <div>
+          <h2>Всё это — в одном движке</h2>
+          <p>Функции встроены в MS: ничего не нужно подключать и настраивать.</p>
+        </div>
+        <div class="actions">
+          <a class="btn btn-primary" href="/download/MS-1.1-Setup.exe">Скачать установщик</a>
+          <a class="btn btn-ghost" href="/language">Примеры</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="/" aria-label="MS — на главную">
+          <img src="/assets/mark.svg" alt="" width="36" height="36">
+          <span class="brand-name">MS</span>
+        </a>
+        <p>Русский язык программирования для первых программ, обучения и небольших задач. Лёгкий движок, понятный синтаксис, Windows 7–11.</p>
+      </div>
+      <div class="footer-col">
+        <b>Разделы</b>
+        <a href="/language">Язык</a>
+        <a href="/install">Установка</a>
+        <a href="/docs">Справочник</a>
+        <a href="/faq">Вопросы</a>
+        <a href="/versions">Версии</a>
+        <a href="/extensions">Расширения</a>
+      </div>
+      <div class="footer-col">
+        <b>Проект</b>
+        <a href="/brand">Фирменный стиль</a>
+        <a href="https://mazing-studio.site">mazing-studio.site</a>
+        <a href="/download/MS-1.1-Setup.exe">Скачать MS 1.1</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 MS · Mazing Studio · автор GG</span>
+      <span>Версия 1.1</span>
+    </div>
+  </div>
+</footer>
+
+<script src="/assets/site.js"></script>
+</body>
+</html>

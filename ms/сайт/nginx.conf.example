@@ -1,0 +1,51 @@
+# Пример конфигурации nginx для сайта MS.
+# Замените root и server_name на свои значения.
+# Проверка: nginx -t
+# Перезагрузка: nginx -s reload
+
+server {
+    listen 80;
+    server_name mazing-studio.site www.mazing-studio.site;
+
+    root /var/www/mazing-studio.site;
+    index index.html;
+    charset utf-8;
+
+    # ЧПУ: /install -> install.html, /docs -> docs.html
+    location / {
+        try_files $uri $uri.html $uri/ =404;
+    }
+
+    # Старые адреса с .html перенаправляем на ЧПУ (кроме 404 и assets)
+    location ~ ^/(?!404\.html$|assets/)(.+?)\.html$ {
+        return 301 /$1;
+    }
+
+    location = /index.html {
+        return 301 /;
+    }
+
+    # Своя страница 404.
+    # Важно: директивы должны быть в активном server { } для домена и после
+    # возможных include из панели хостинга — иначе панель переопределит их.
+    error_page 404 =404 @notfound;
+
+    location @notfound {
+        # @-локация не участвует в правилах ЧПУ и не перехватывается
+        # редиректами .html -> без расширения.
+        try_files /404.html =404;
+    }
+
+    location /assets/ {
+        try_files $uri =404;
+        expires 7d;
+    }
+
+    location /download/ {
+        try_files $uri =404;
+        add_header Content-Disposition "attachment";
+    }
+
+    # Если HTTPS уже настроен, добавьте сюда listen 443 ssl
+    # и пути к сертификатам либо используйте certbot.
+}

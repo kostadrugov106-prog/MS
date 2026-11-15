@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Вопросы — MS · Mazing Studio</title>
+<meta name="description" content="Частые вопросы о MS: Windows, установка, файлы .ms, удаление и обновления.">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<meta name="theme-color" content="#2A2C2B">
+<link rel="canonical" href="https://mazing-studio.site/faq">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="MS">
+<meta property="og:title" content="Вопросы — MS &#183; Mazing Studio">
+<meta property="og:description" content="Частые вопросы о MS: Windows, установка, файлы .ms, удаление и обновления.">
+<meta property="og:url" content="https://mazing-studio.site/faq">
+<meta property="og:image" content="https://mazing-studio.site/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="MS — русский язык программирования">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Вопросы — MS &#183; Mazing Studio">
+<meta name="twitter:description" content="Частые вопросы о MS: Windows, установка, файлы .ms, удаление и обновления.">
+<meta name="twitter:image" content="https://mazing-studio.site/assets/og.png">
+<link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+<a class="skip" href="#main">Перейти к содержимому</a>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="/" aria-label="MS — на главную">
+      <img src="/assets/mark.svg" alt="" width="36" height="36">
+      <span class="brand-name">MS</span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Меню</button>
+    <nav class="nav" id="site-nav" aria-label="Основная навигация">
+      <a href="/">Главная</a>
+      <a href="/language">Язык</a>
+      <a href="/install">Установка</a>
+      <a href="/docs">Справочник</a>
+      <a href="/faq" aria-current="page">Вопросы</a>
+      <a href="/versions">Версии</a>
+      <a href="/extensions">Расширения</a>
+      <a class="nav-download" href="/download/MS-1.1-Setup.exe">Скачать</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <div class="wrap">
+    <nav class="crumbs" aria-label="Хлебные крошки">
+      <a href="/">Главная</a><span>/</span><span>Вопросы</span>
+    </nav>
+
+    <section class="hero">
+      <span class="eyebrow">Вопросы</span>
+      <h1 class="display">Коротко<br><em>о главном</em></h1>
+      <p class="lead">
+        Windows, установка, файлы <code>.ms</code>, удаление и обновления.
+        Если ответа нет — загляните в <a href="/docs">справочник</a> или на <a href="https://mazing-studio.site">сайт студии</a>.
+      </p>
+      <div class="actions">
+        <a class="btn btn-primary" href="/download/MS-1.1-Setup.exe">Скачать установщик</a>
+        <a class="btn btn-ghost" href="/docs">Справочник функций</a>
+      </div>
+    </section>
+  </div>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="page-grid">
+        <div class="page-main">
+          <div class="faq">
+            <details open>
+              <summary>Нужен ли Python для работы MS?</summary>
+              <p>Нет. Движок написан на C и не использует Python вообще.</p>
+            </details>
+            <details>
+              <summary>Какие Windows поддерживаются?</summary>
+              <p>Windows 7, 8, 8.1, 10 и 11 (64-битные). Никаких дополнительных библиотек не нужно.</p>
+            </details>
+            <details>
+              <summary>Можно ли работать без установки?</summary>
+              <p>Да. Положите <code>ms.exe</code> рядом с файлом программы и запускайте: реестр, PATH и ярлыки не нужны.
+                 Подробнее — <a href="/install#portable">в разделе «Портативный режим»</a>.</p>
+            </details>
+            <details>
+              <summary>Как открыть программу .ms?</summary>
+              <p>После установки — двойным щелчком. Окно не закроется сразу: язык подождёт, пока вы нажмёте Enter.</p>
+            </details>
+            <details>
+              <summary>Можно ли переносить программы?</summary>
+              <p>Да. Файл <code>.ms</code> — обычный текстовый файл. Его можно копировать и открывать где угодно, где установлен MS.</p>
+            </details>
+            <details>
+              <summary>Как удалить MS с компьютера?</summary>
+              <p>Запустите <code>MS-1.1-Setup.exe /uninstall</code> — откроется мастер удаления, нажмите «Удалить».
+                 Язык, ассоциация файлов, ярлыки и записи PATH удалятся полностью. Для тихого удаления —
+                 <code>MS-1.1-Setup.exe /S /uninstall</code>. Подробнее — <a href="/install#uninstall">в разделе «Удаление»</a>.</p>
+            </details>
+            <details>
+              <summary>Где найти описание функций?</summary>
+              <p>В <a href="/docs">справочнике</a>: строки, числа, списки, файлы и примеры вызова.</p>
+            </details>
+            <details>
+              <summary>Где скачать обновления?</summary>
+              <p>На сайте студии: <a href="https://mazing-studio.site">mazing-studio.site</a>.</p>
+            </details>
+            <details>
+              <summary>Как открыть «Центр MS»?</summary>
+              <p>Из меню «Пуск» — ярлык «Центр MS», или файл <code>ms_center.exe</code> в папке установки.
+                 Внутри — расширения, настройки, учебник и редактор программ.</p>
+            </details>
+            <details>
+              <summary>Как установить расширение?</summary>
+              <p>Откройте «Центр MS» → «Расширения» → «Каталог с сайта», выберите набор и нажмите
+                 «Скачать и включить». Набор скачается, установится и сразу заработает;
+                 в программе подключите его командой <code>подключить("веб")</code>.</p>
+            </details>
+            <details>
+              <summary>Почему не меняется тема?</summary>
+              <p>Выберите тему в настройках и нажмите «Сохранить» — оформление Центра обновится сразу.
+                 Тема меняет окно Центра, а не вывод программ.</p>
+            </details>
+            <details>
+              <summary>Язык бесплатный?</summary>
+              <p>Да, версия 1.1 распространяется свободно. Её можно использовать дома и в школе.</p>
+            </details>
+            <details>
+              <summary>Почему Windows предупреждает при запуске?</summary>
+              <p>Установщик пока не подписан платным сертификатом, поэтому SmartScreen показывает синее окно.
+                 Нажмите «Подробнее» → «Выполнить всё равно». Права администратора при этом не нужны.</p>
+            </details>
+            <details>
+              <summary>Антивирус ругается на установщик. Это опасно?</summary>
+              <p>Новые небольшие программы без цифровой подписи иногда попадают под подозрение. Скачивайте MS только
+                 с <a href="https://mazing-studio.site">mazing-studio.site</a> и не запускайте файлы из других источников.</p>
+            </details>
+            <details>
+              <summary>Пишет «ms не является внутренней или внешней командой»</summary>
+              <p>Значит, команда <code>ms</code> не попала в PATH. Закройте и снова откройте командную строку;
+                 если не помогло — запустите установщик и включите «Добавить ms в PATH».</p>
+            </details>
+            <details>
+              <summary>Файлы .ms не открываются двойным щелчком</summary>
+              <p>Ассоциация могла быть отключена при установке. Запустите установщик снова и включите
+                 «Связать файлы .ms», либо выберите «Открыть с помощью» → <code>ms.exe</code>.</p>
+            </details>
+            <details>
+              <summary>В какой кодировке сохранять программы?</summary>
+              <p>В UTF-8. В Блокноте: «Сохранить как» → в поле кодировки выберите UTF-8. Тогда русские буквы
+                 и текст в программе отобразятся правильно.</p>
+            </details>
+            <details>
+              <summary>Как проверить, что MS установился?</summary>
+              <p>Откройте командную строку и выполните <code>ms --версия</code>. Должна появиться строка
+                 «MS 1.1».</p>
+            </details>
+            <details>
+              <summary>Собирает ли сайт мои данные?</summary>
+              <p>Нет. На сайте MS нет форм, регистрации, рекламы и аналитики. Скачивание установщика нигде не фиксируется.</p>
+            </details>
+            <details>
+              <summary>Можно ли использовать MS в школе и своих проектах?</summary>
+              <p>Да, для личных и учебных задач. Для коммерческого использования сначала свяжитесь со студией —
+                 условия обсуждаются отдельно.</p>
+            </details>
+            <details>
+              <summary>Куда сообщить об ошибке или предложить идею?</summary>
+              <p>На <a href="https://mazing-studio.site">сайт студии</a>. Приложите версию (<code>ms --версия</code>),
+                 текст программы и сообщение об ошибке — так проще разобраться.</p>
+            </details>
+          </div>
+        </div>
+
+        <aside class="toc" aria-label="Полезные разделы">
+          <b>Полезные разделы</b>
+          <a href="/install">Установка</a>
+          <a href="/install#uninstall">Удаление</a>
+          <a href="/language">Язык и примеры</a>
+          <a href="/docs">Справочник</a>
+          <a href="/download/MS-1.1-Setup.exe">Скачать MS 1.1</a>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="band">
+        <div>
+          <h2>Остались вопросы?</h2>
+          <p>Начните с установки — она занимает пару секунд, а примеры уже готовы.</p>
+        </div>
+        <div class="actions">
+          <a class="btn btn-primary" href="/download/MS-1.1-Setup.exe">Скачать установщик</a>
+          <a class="btn btn-ghost" href="/language">Примеры программ</a>
+          <a class="btn btn-ghost" href="https://mazing-studio.site">Сайт студии</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="/" aria-label="MS — на главную">
+          <img src="/assets/mark.svg" alt="" width="36" height="36">
+          <span class="brand-name">MS</span>
+        </a>
+        <p>Русский язык программирования для первых программ, обучения и небольших задач. Лёгкий движок, понятный синтаксис, Windows 7–11.</p>
+      </div>
+      <div class="footer-col">
+        <b>Разделы</b>
+        <a href="/language">Язык</a>
+        <a href="/install">Установка</a>
+        <a href="/docs">Справочник</a>
+        <a href="/faq">Вопросы</a>
+        <a href="/versions">Версии</a>
+        <a href="/extensions">Расширения</a>
+      </div>
+      <div class="footer-col">
+        <b>Проект</b>
+        <a href="/brand">Фирменный стиль</a>
+        <a href="https://mazing-studio.site">mazing-studio.site</a>
+        <a href="/download/MS-1.1-Setup.exe">Скачать MS 1.1</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 MS · Mazing Studio · автор GG</span>
+      <span>Версия 1.1</span>
+    </div>
+  </div>
+</footer>
+
+<script src="/assets/site.js"></script>
+</body>
+</html>

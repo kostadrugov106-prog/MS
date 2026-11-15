@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Расширения — MS · Mazing Studio</title>
+<meta name="description" content="Каталог расширений MS: «Веб» — полный каркас для HTML-сайтов. Установка через «Центр MS», поиск по функциям.">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<meta name="theme-color" content="#2A2C2B">
+<link rel="canonical" href="https://mazing-studio.site/extensions">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="MS">
+<meta property="og:title" content="Расширения — MS &#183; Mazing Studio">
+<meta property="og:description" content="Каталог расширений MS: «Веб» — полный каркас для HTML-сайтов. Установка через «Центр MS», поиск по функциям.">
+<meta property="og:url" content="https://mazing-studio.site/extensions">
+<meta property="og:image" content="https://mazing-studio.site/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="MS — русский язык программирования">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Расширения — MS &#183; Mazing Studio">
+<meta name="twitter:description" content="Каталог расширений MS: «Веб» — полный каркас для HTML-сайтов. Установка через «Центр MS», поиск по функциям.">
+<meta name="twitter:image" content="https://mazing-studio.site/assets/og.png">
+<link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+<a class="skip" href="#main">Перейти к содержимому</a>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="/" aria-label="MS — на главную">
+      <img src="/assets/mark.svg" alt="" width="36" height="36">
+      <span class="brand-name">MS</span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Меню</button>
+    <nav class="nav" id="site-nav" aria-label="Основная навигация">
+      <a href="/">Главная</a>
+      <a href="/language">Язык</a>
+      <a href="/install">Установка</a>
+      <a href="/docs">Справочник</a>
+      <a href="/faq">Вопросы</a>
+      <a href="/versions">Версии</a>
+      <a href="/extensions" aria-current="page">Расширения</a>
+      <a class="nav-download" href="/download/MS-1.1-Setup.exe">Скачать</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <div class="wrap">
+    <nav class="crumbs" aria-label="Хлебные крошки">
+      <a href="/">Главная</a><span>/</span><span>Расширения</span>
+    </nav>
+
+    <section class="hero">
+      <span class="eyebrow">Расширения</span>
+      <h1 class="display">Расширения<br><em>MS 1.1</em></h1>
+      <p class="lead">
+        Расширение — это обычный файл <code>.ms</code> с функциями. Подключите его командой
+        <code>подключить("имя")</code> — и функции появятся в программе. Включать, выключать
+        и удалять расширения удобно в «Центре MS».
+      </p>
+      <div class="actions">
+        <a class="btn btn-primary" href="#catalog">К каталогу</a>
+        <a class="btn btn-ghost" href="/download/MS-1.1-Setup.exe">Скачать MS 1.1</a>
+      </div>
+      <p class="note mt-24">
+        <span class="tag tag-ok">Работает в 1.1</span>
+        Фундамент расширений уже встроен в движок. Сейчас это уже часть 1.1:
+        наборов немного, и они проверяются вручную.
+      </p>
+    </section>
+  </div>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Как это работает</span>
+        <h2>Три шага</h2>
+        <p>Никаких установщиков и прав администратора — только файл и одна строка в программе.</p>
+      </div>
+      <div class="grid">
+        <div class="card">
+          <h3>1. Положите файл</h3>
+          <p>Скачанный <code>.ms</code> положите в папку <code>%APPDATA%\MazingStudio\MS\расширения</code> или нажмите «Открыть папку» в «Центре MS».</p>
+        </div>
+        <div class="card">
+          <h3>2. Подключите</h3>
+          <p>В начале программы напишите <code>подключить("веб")</code>. Имя — это имя файла без <code>.ms</code>.</p>
+        </div>
+        <div class="card">
+          <h3>3. Пользуйтесь</h3>
+          <p>Функции расширения вызываются как обычные. Отключить набор можно в «Центре MS» — файл останется на месте.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="version-card">
+        <div class="version-head">
+          <span class="version-number">1.1</span>
+          <span class="tag tag-ok">Стабильный выпуск</span>
+        </div>
+        <p>
+          Фундамент расширений уже работает: движок находит файлы, подключает их в общее
+          пространство имён и уважает отключённые наборы. «Центр MS» показывает список
+          и позволяет включать, выключать и удалять расширения без командной строки.
+        </p>
+        <ul>
+          <li>Подключение: <code>подключить("имя")</code> — со скобками или без.</li>
+          <li>Поиск: папка пользователя, папка движка и папка программы — в этом порядке.</li>
+          <li>Отключение: файл переименовывается в <code>.ms.off</code> и не загружается.</li>
+          <li>Защита: имена с <code>..</code> и запрещёнными символами не принимаются.</li>
+          <li>До 64 расширений на одну программу.</li>
+        </ul>
+        <p class="note">
+          Ставить вручную не обязательно: в «Центре MS» откройте «Расширения», нажмите
+          «Каталог» — список наборов загрузится с сайта, выберите нужный и нажмите
+          «Скачать и включить». Набор скачается, установится и сразу заработает.
+        </p>
+
+        <div class="mt-24" id="catalog">
+          <div class="catalog-search">
+            <label for="ext-search">Поиск по каталогу</label>
+            <input type="search" id="ext-search" placeholder="Название, функция, описание…" autocomplete="off">
+          </div>
+          <p class="note catalog-count" id="ext-count">Наборов: 1</p>
+        </div>
+
+        <div class="table-wrap mt-16">
+          <table id="ext-table">
+            <thead><tr><th>Набор</th><th>Версия</th><th>Что добавляет</th><th>Установка</th></tr></thead>
+            <tbody>
+              <tr>
+                <td>Веб</td>
+                <td>1.0</td>
+                <td>Полный каркас сайтов: теги, карточки, формы, меню, тема, <code>страница</code>, <code>сайт</code>, <code>слаг</code></td>
+                <td>«Центр MS» → «Каталог с сайта» → «Скачать и включить»</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <nav class="pager" id="ext-pager" aria-label="Страницы каталога">
+          <button type="button" id="ext-prev" class="btn btn-ghost">Назад</button>
+          <span class="pager-state" id="ext-page">1 / 1</span>
+          <button type="button" id="ext-next" class="btn btn-ghost">Вперёд</button>
+        </nav>
+      </div>
+
+      <div class="table-wrap mt-32">
+        <table>
+          <thead><tr><th>Этап</th><th>Статус</th></tr></thead>
+          <tbody>
+            <tr><td>Формат расширений</td><td><span class="tag tag-ok">Готово</span></td></tr>
+            <tr><td>Движок и подключение</td><td><span class="tag tag-ok">Готово</span></td></tr>
+            <tr><td>Управление в «Центре MS»</td><td><span class="tag tag-ok">Готово</span></td></tr>
+            <tr><td>Каталог наборов</td><td><span class="tag tag-ok">Готово</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p class="note mt-24">
+        Осторожно: официальный источник MS — только <a href="https://mazing-studio.site">mazing-studio.site</a>.
+        Не скачивайте «расширения MS» со сторонних сайтов.
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="band">
+        <div>
+          <h2>Начните с примера</h2>
+          <p>Поставьте «Веб» через «Центр MS» и соберите первую страницу одной строкой.</p>
+        </div>
+        <div class="actions">
+          <a class="btn btn-primary" href="#catalog">К каталогу</a>
+          <a class="btn btn-ghost" href="/docs#extensions">Как подключить</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="/" aria-label="MS — на главную">
+          <img src="/assets/mark.svg" alt="" width="36" height="36">
+          <span class="brand-name">MS</span>
+        </a>
+        <p>Русский язык программирования для первых программ, обучения и небольших задач. Лёгкий движок, понятный синтаксис, Windows 7–11.</p>
+      </div>
+      <div class="footer-col">
+        <b>Разделы</b>
+        <a href="/language">Язык</a>
+        <a href="/install">Установка</a>
+        <a href="/docs">Справочник</a>
+        <a href="/faq">Вопросы</a>
+        <a href="/versions">Версии</a>
+        <a href="/extensions">Расширения</a>
+      </div>
+      <div class="footer-col">
+        <b>Проект</b>
+        <a href="/brand">Фирменный стиль</a>
+        <a href="https://mazing-studio.site">mazing-studio.site</a>
+        <a href="/download/MS-1.1-Setup.exe">Скачать MS 1.1</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 MS · Mazing Studio · автор GG</span>
+      <span>Версия 1.1</span>
+    </div>
+  </div>
+</footer>
+
+
+<script>
+(function(){
+  var q = document.getElementById("ext-search");
+  var t = document.getElementById("ext-table");
+  var c = document.getElementById("ext-count");
+  var prev = document.getElementById("ext-prev");
+  var next = document.getElementById("ext-next");
+  var pg = document.getElementById("ext-page");
+  if(!q || !t || !c || !prev || !next || !pg) return;
+  var rows = Array.prototype.slice.call(t.tBodies[0].rows);
+  var size = 5, page = 1;
+  function list(){
+    var s = q.value.toLowerCase().trim();
+    return rows.filter(function(r){
+      return !s || r.textContent.toLowerCase().indexOf(s) !== -1;
+    });
+  }
+  function draw(){
+    var all = list();
+    var pages = Math.max(1, Math.ceil(all.length / size));
+    if (page > pages) page = pages;
+    rows.forEach(function(r){ r.style.display = "none"; });
+    all.slice((page-1)*size, page*size).forEach(function(r){ r.style.display = ""; });
+    c.textContent = "Наборов: " + all.length;
+    pg.textContent = page + " / " + pages;
+    prev.disabled = page <= 1;
+    next.disabled = page >= pages;
+  }
+  q.addEventListener("input", function(){ page = 1; draw(); });
+  prev.addEventListener("click", function(){ if(page>1){ page--; draw(); } });
+  next.addEventListener("click", function(){ page++; draw(); });
+  draw();
+})();
+</script><script src="/assets/site.js"></script>
+</body>
+</html>

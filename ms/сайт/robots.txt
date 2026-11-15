@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /download/
+Disallow: /assets/og.html
+Sitemap: https://mazing-studio.site/sitemap.xml

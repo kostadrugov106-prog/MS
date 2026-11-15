@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Установка — MS · Mazing Studio</title>
+<meta name="description" content="Как установить MS 1.1: мастер, портативный режим, тихая установка и полное удаление. Windows 7–11, без прав администратора.">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<meta name="theme-color" content="#2A2C2B">
+<link rel="canonical" href="https://mazing-studio.site/install">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="MS">
+<meta property="og:title" content="Установка — MS &#183; Mazing Studio">
+<meta property="og:description" content="Как установить MS 1.1: мастер, портативный режим, тихая установка и полное удаление. Windows 7–11, без прав администратора.">
+<meta property="og:url" content="https://mazing-studio.site/install">
+<meta property="og:image" content="https://mazing-studio.site/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="MS — русский язык программирования">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Установка — MS &#183; Mazing Studio">
+<meta name="twitter:description" content="Как установить MS 1.1: мастер, портативный режим, тихая установка и полное удаление. Windows 7–11, без прав администратора.">
+<meta name="twitter:image" content="https://mazing-studio.site/assets/og.png">
+<link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+<a class="skip" href="#main">Перейти к содержимому</a>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="/" aria-label="MS — на главную">
+      <img src="/assets/mark.svg" alt="" width="36" height="36">
+      <span class="brand-name">MS</span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Меню</button>
+    <nav class="nav" id="site-nav" aria-label="Основная навигация">
+      <a href="/">Главная</a>
+      <a href="/language">Язык</a>
+      <a href="/install" aria-current="page">Установка</a>
+      <a href="/docs">Справочник</a>
+      <a href="/faq">Вопросы</a>
+      <a href="/versions">Версии</a>
+      <a href="/extensions">Расширения</a>
+      <a class="nav-download" href="/download/MS-1.1-Setup.exe">Скачать</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <div class="wrap">
+    <nav class="crumbs" aria-label="Хлебные крошки">
+      <a href="/">Главная</a><span>/</span><span>Установка</span>
+    </nav>
+
+    <section class="hero">
+      <span class="eyebrow">Установка</span>
+      <h1 class="display">Поставить MS —<br><em>пара секунд</em></h1>
+      <p class="lead">
+        Один установщик, никаких прав администратора и зависимостей. Мастер предложит
+        стандартную папку или позволит выбрать свою, ярлыки и ассоциацию файлов.
+      </p>
+      <div class="actions">
+        <a class="btn btn-primary" href="/download/MS-1.1-Setup.exe">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"/><path d="m7 11 5 5 5-5"/><path d="M4 21h16"/></svg>
+          Скачать установщик
+        </a>
+        <a class="btn btn-ghost" href="#uninstall">Как удалить</a>
+      </div>
+    </section>
+  </div>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Мастер</span>
+        <h2>Как установить</h2>
+        <p>Обычный установщик: запустили, нажали «Установить», закрыли. Всё остальное он сделает сам.</p>
+      </div>
+      <ol class="steps">
+        <li><b>Скачайте установщик</b> <a href="/download/MS-1.1-Setup.exe">MS-1.1-Setup.exe</a> — это один файл, около 300 КБ.</li>
+        <li><b>Запустите его.</b> «Установить сейчас» поставит MS в стандартную папку, «Настроить установку» позволит выбрать папку, ярлыки, ассоциацию <code>.ms</code> и команду <code>ms</code> в PATH.</li>
+        <li><b>Нажмите «Установить»</b> и дождитесь надписи «Установка завершена».</li>
+        <li><b>Готово.</b> Файлы <code>.ms</code> открываются двойным щелчком, команда <code>ms</code> работает в командной строке, а в меню «Пуск» появляется «Центр MS» — расширения, настройки и учебник.</li>
+      </ol>
+
+      <p class="note mt-24">
+        Если при запуске Windows покажет синее окно SmartScreen, нажмите «Подробнее» → «Выполнить всё равно».
+        Установщик пока не подписан сертификатом — это обычное предупреждение для небольших программ.
+      </p>
+
+      <div class="grid mt-32">
+        <div class="card">
+          <h3>Системные требования</h3>
+          <ul>
+            <li>Windows 7, 8, 8.1, 10 или 11 (64-бит).</li>
+            <li>Около 1 МБ на диске.</li>
+            <li>Права администратора не нужны.</li>
+            <li>Python и другие библиотеки не требуются.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Что можно выбрать</h3>
+          <ul>
+            <li>Папку установки — по умолчанию <code>%LOCALAPPDATA%\Programs\MS</code>.</li>
+            <li>Ярлык в меню «Пуск» и на рабочем столе.</li>
+            <li>Ассоциацию файлов <code>.ms</code>.</li>
+            <li>Команду <code>ms</code> в PATH.</li>
+            <li>Ярлык «Центр MS» — расширения, настройки, учебник и редактор.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="portable">
+    <div class="wrap">
+      <div class="page-grid">
+        <div class="page-main">
+          <div class="section-head">
+            <span class="eyebrow">Без установки</span>
+            <h2>Портативный режим</h2>
+            <p>Можно вообще не устанавливать MS: положите <code>ms.exe</code> рядом с файлом программы и запускайте.</p>
+          </div>
+          <div class="codeblock">
+            <div class="codehead"><span>Запуск из папки с движком</span><button class="copy" data-copy="ms.exe привет.ms">Копировать</button></div>
+            <pre><code>ms.exe привет.ms
+ms.exe --help
+ms.exe --version</code></pre>
+          </div>
+          <p class="note mt-24">Портативному режиму не нужны ни реестр, ни PATH — только сам движок и ваш файл <code>.ms</code>.</p>
+        </div>
+        <aside class="toc" aria-label="На этой странице">
+          <b>На этой странице</b>
+          <a href="#portable">Портативный режим</a>
+          <a href="#silent">Тихая установка</a>
+          <a href="#uninstall">Удаление</a>
+          <a href="#problems">Если что-то не так</a>
+          <a href="/docs">Справочник</a>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="silent">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Автоматизация</span>
+        <h2>Тихая установка</h2>
+        <p>Для скриптов и развёртывания у установщика есть ключи. Окно мастера не появляется.</p>
+      </div>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>Команда</th><th>Что делает</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><code>MS-1.1-Setup.exe /S</code></td><td>Устанавливает MS в стандартную папку без вопросов.</td></tr>
+            <tr><td><code>MS-1.1-Setup.exe /S /D=C:\MS</code></td><td>Тихая установка в указанную папку.</td></tr>
+            <tr><td><code>MS-1.1-Setup.exe /uninstall</code></td><td>Открывает мастер удаления с подтверждением.</td></tr>
+            <tr><td><code>MS-1.1-Setup.exe /S /uninstall</code></td><td>Удаляет MS без вопросов.</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="note mt-24">Ключи можно писать в любом регистре: <code>/s</code>, <code>/d=</code>, <code>/Uninstall</code>.</p>
+    </div>
+  </section>
+
+  <section class="section" id="uninstall">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Удаление</span>
+        <h2>Удалить MS полностью</h2>
+        <p>Мастер удаления снимает движок, ярлыки, ассоциацию и записи PATH. Ваши файлы <code>.ms</code> остаются на месте.</p>
+      </div>
+      <div class="grid">
+        <div class="card">
+          <h3>Через мастер</h3>
+          <p>Запустите <code>MS-1.1-Setup.exe /uninstall</code> и нажмите «Удалить». Мастер покажет папку, из которой удаляет MS.</p>
+        </div>
+        <div class="card">
+          <h3>Без вопросов</h3>
+          <p>Команда <code>MS-1.1-Setup.exe /S /uninstall</code> удалит всё молча — удобно для скриптов.</p>
+        </div>
+        <div class="card">
+          <h3>Что удаляется</h3>
+          <p>Движок, ярлыки в меню «Пуск» и на рабочем столе, ассоциация <code>.ms</code>, запись в PATH и настройки в реестре.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="problems">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Помощь</span>
+        <h2>Если что-то не так</h2>
+        <p>Четыре частые ситуации — и что с ними делать.</p>
+      </div>
+      <div class="grid">
+        <div class="card">
+          <h3>Windows предупреждает</h3>
+          <p>SmartScreen покажет синее окно, потому что установщик не подписан. Нажмите «Подробнее» → «Выполнить всё равно».</p>
+        </div>
+        <div class="card">
+          <h3>Команда ms не найдена</h3>
+          <p>Закройте и откройте командную строку заново. Если не помогло — переустановите MS с включённым пунктом «Добавить ms в PATH».</p>
+        </div>
+        <div class="card">
+          <h3>Файлы .ms не открываются</h3>
+          <p>Ассоциацию можно включить при установке. Или нажмите на файл правой кнопкой → «Открыть с помощью» → выберите <code>ms.exe</code>.</p>
+        </div>
+        <div class="card">
+          <h3>Русский текст в программе</h3>
+          <p>Сохраняйте файл <code>.ms</code> в UTF-8. В Блокноте это «Сохранить как» → кодировка UTF-8.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="band">
+        <div>
+          <h2>Готовы поставить MS?</h2>
+          <p>Один файл, пара секунд — и можно писать первую программу.</p>
+        </div>
+        <div class="actions">
+          <a class="btn btn-primary" href="/download/MS-1.1-Setup.exe">Скачать установщик</a>
+          <a class="btn btn-ghost" href="/language">Примеры программ</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="/" aria-label="MS — на главную">
+          <img src="/assets/mark.svg" alt="" width="36" height="36">
+          <span class="brand-name">MS</span>
+        </a>
+        <p>Русский язык программирования для первых программ, обучения и небольших задач. Лёгкий движок, понятный синтаксис, Windows 7–11.</p>
+      </div>
+      <div class="footer-col">
+        <b>Разделы</b>
+        <a href="/language">Язык</a>
+        <a href="/install">Установка</a>
+        <a href="/docs">Справочник</a>
+        <a href="/faq">Вопросы</a>
+        <a href="/versions">Версии</a>
+        <a href="/extensions">Расширения</a>
+      </div>
+      <div class="footer-col">
+        <b>Проект</b>
+        <a href="/brand">Фирменный стиль</a>
+        <a href="https://mazing-studio.site">mazing-studio.site</a>
+        <a href="/download/MS-1.1-Setup.exe">Скачать MS 1.1</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 MS · Mazing Studio · автор GG</span>
+      <span>Версия 1.1</span>
+    </div>
+  </div>
+</footer>
+
+<script src="/assets/site.js"></script>
+</body>
+</html>
